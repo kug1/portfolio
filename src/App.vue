@@ -4,7 +4,10 @@
     <the-header></the-header>
   </header>
   <main v-motion-slide-top>
-    <projects-grid></projects-grid>
+    <Suspense>
+      <projects-grid></projects-grid>
+      <template #fallback> Loading... </template>
+    </Suspense>
   </main>
   <footer v-motion-slide-top>
     <the-footer></the-footer>

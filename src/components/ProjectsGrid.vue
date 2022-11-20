@@ -5,7 +5,7 @@
     >
       Projects
     </h1>
-    <div class="max-w-fit flex my-4 self-center">
+    <div class="max-w-fit flex my-4 self-center flex-wrap">
       <template v-for="project in projects" :key="project.id">
         <project-item
           v-if="!project.fork"
@@ -22,17 +22,21 @@
 </template>
 
 <script>
-import projects from "../data/projects.js";
 import ProjectItem from "../components/ProjectItem.vue";
 
 export default {
-  data() {
-    return {
-      projects: projects,
-    };
-  },
   components: {
     ProjectItem,
+  },
+  async setup() {
+    const res = await fetch(
+      `https://api.github.com/users/kug1/repos?type=owner`
+    );
+    const projects = await res.json();
+    // this.projects = data;
+    return {
+      projects,
+    };
   },
 };
 </script>

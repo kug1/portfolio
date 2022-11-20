@@ -1,6 +1,6 @@
 <template>
   <div
-    class="rounded border-2 border-black dark:border-white flex flex-col p-5 overflow-hidden w-[21.50rem]"
+    class="rounded border-2 border-black dark:border-white flex flex-col p-5 overflow-hidden w-[21.50rem] m-3"
   >
     <div class="flex flex-row flex-wrap justify-between content-center h-6">
       <a
@@ -17,8 +17,8 @@
       </a>
       <div class="flex flex-row items-center">
         <span class="p-1 text-sm font-medium">{{ stars }}</span>
+        <icon-svg icon="mdi:star" />
       </div>
-      <icon-svg icon="mdi:star" />
     </div>
     <div class="h-full flex flex-col justify-between">
       <p class="text-sm font-thin">{{ desc }}</p>
@@ -46,7 +46,7 @@ export default {
       const lang = this.language.toLowerCase();
 
       switch (lang) {
-        case "vuejs":
+        case "vue":
           return "mdi:vuejs";
       }
       return "mdi:language-" + lang;
