@@ -6,7 +6,9 @@
   <main v-motion-slide-top>
     <Suspense>
       <projects-grid></projects-grid>
-      <template #fallback> Loading... </template>
+      <template #fallback>
+        <span class="font-semibold text-center">Loading...</span>
+      </template>
     </Suspense>
   </main>
   <footer v-motion-slide-top>
