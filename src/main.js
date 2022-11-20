@@ -5,5 +5,7 @@ import { MotionPlugin } from "@vueuse/motion";
 
 const app = createApp(App);
 
+app.use("/assets", express.static(path.join(__dirname, "/assets")));
+
 app.use(MotionPlugin);
 app.mount("#app");
