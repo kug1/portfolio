@@ -48,6 +48,8 @@ export default {
       switch (lang) {
         case 'vue':
           return 'mdi:vuejs';
+        case 'html':
+          return 'html5';
       }
       return 'mdi:language-' + lang;
     },
