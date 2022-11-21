@@ -7,7 +7,7 @@
     <Suspense>
       <projects-grid></projects-grid>
       <template #fallback>
-        <span class="font-semibold text-center">Loading...</span>
+        <Loading />
       </template>
     </Suspense>
   </main>
@@ -20,8 +20,9 @@
 import TheHeader from './components/layouts/TheHeader.vue';
 import TheFooter from './components/layouts/TheFooter.vue';
 
-import DarkMode from './components/DarkMode.vue';
+import DarkMode from './components/ui/DarkMode.vue';
 import ProjectsGrid from './components/ProjectsGrid.vue';
+import Loading from './components/ui/Loading.vue';
 
 export default {
   components: {
@@ -29,6 +30,8 @@ export default {
     TheHeader,
     TheFooter,
     ProjectsGrid,
+    Loading,
+    Loading,
   },
 };
 </script>
