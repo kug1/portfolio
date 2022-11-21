@@ -31,13 +31,13 @@
 </template>
 
 <script>
-import { Icon } from "@iconify/vue";
+import { Icon } from '@iconify/vue';
 
 export default {
   data() {
     return {};
   },
-  props: ["name", "url", "desc", "stars", "language"],
+  props: ['name', 'url', 'desc', 'stars', 'language'],
   components: {
     IconSvg: Icon,
   },
@@ -46,10 +46,10 @@ export default {
       const lang = this.language.toLowerCase();
 
       switch (lang) {
-        case "vue":
-          return "mdi:vuejs";
+        case 'vue':
+          return 'mdi:vuejs';
       }
-      return "mdi:language-" + lang;
+      return 'mdi:language-' + lang;
     },
   },
 };

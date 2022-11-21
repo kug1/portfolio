@@ -17,11 +17,11 @@
 </template>
 
 <script>
-import TheHeader from "./components/layouts/TheHeader.vue";
-import TheFooter from "./components/layouts/TheFooter.vue";
+import TheHeader from './components/layouts/TheHeader.vue';
+import TheFooter from './components/layouts/TheFooter.vue';
 
-import DarkMode from "./components/DarkMode.vue";
-import ProjectsGrid from "./components/ProjectsGrid.vue";
+import DarkMode from './components/DarkMode.vue';
+import ProjectsGrid from './components/ProjectsGrid.vue';
 
 export default {
   components: {
