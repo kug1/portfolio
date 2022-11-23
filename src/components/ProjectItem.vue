@@ -50,6 +50,8 @@ export default {
           return 'mdi:vuejs';
         case 'html':
           return 'html5';
+        case 'css':
+          return 'css3';
       }
       return 'mdi:language-' + lang;
     },

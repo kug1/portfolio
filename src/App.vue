@@ -31,7 +31,6 @@ export default {
     TheFooter,
     ProjectsGrid,
     Loading,
-    Loading,
   },
 };
 </script>

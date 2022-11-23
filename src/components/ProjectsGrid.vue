@@ -5,7 +5,9 @@
     >
       Projects
     </h1>
-    <div class="max-w-fit flex my-4 self-center flex-wrap">
+    <div
+      class="max-w-fit flex my-4 self-center flex-wrap align-center justify-center"
+    >
       <template v-for="project in projects" :key="project.id">
         <project-item
           v-if="!project.fork"
