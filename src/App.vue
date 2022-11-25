@@ -4,6 +4,7 @@
     <the-header></the-header>
   </header>
   <main v-motion-slide-top>
+    <About />
     <Suspense>
       <projects-grid></projects-grid>
       <template #fallback>
@@ -23,6 +24,7 @@ import TheFooter from './components/layouts/TheFooter.vue';
 import DarkMode from './components/ui/DarkMode.vue';
 import ProjectsGrid from './components/ProjectsGrid.vue';
 import Loading from './components/ui/Loading.vue';
+import About from './components/About.vue';
 
 export default {
   components: {
@@ -31,6 +33,7 @@ export default {
     TheFooter,
     ProjectsGrid,
     Loading,
+    About,
   },
 };
 </script>

@@ -1,7 +1,7 @@
 <template>
-  <div class="flex flex-col">
+  <div class="flex flex-col mt-10">
     <h1
-      class="text-center text-2xl md:text-3xl lg:text-[2.10rem] font-bold my-6"
+      class="text-center text-2xl md:text-3xl lg:text-[2.10rem] font-bold my-8 underline decoration-blue-600 dark:decoration-github-blue decoration-2 md:decoration-3 underline-offset-4"
     >
       Projects
     </h1>
