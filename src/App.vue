@@ -44,7 +44,12 @@ html.dark {
 }
 
 body {
+  height: 100%;
   transition: all 0.4s cubic-bezier(0.075, 0.82, 0.165, 1);
   @apply bg-[#ffffff] text-[#0b0f10] dark:bg-[#0b0f10] dark:text-white;
+}
+
+footer {
+  height: 100%;
 }
 </style>

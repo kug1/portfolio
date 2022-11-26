@@ -1,9 +1,11 @@
 <template>
   <li
-    class="p-5 m-4 border-black rounded border-2 dark:border-white flex flex-row justify-start w-[9rem] md:w-[12rem]"
+    class="p-5 m-3 border-black rounded border-2 dark:border-white flex flex-row justify-start w-[9rem] md:w-[12rem]"
   >
     <icon-svg :icon="decideIcon" height="24"></icon-svg>
-    <span class="font-semibold text-sm mx-1 align-middle">{{ lang }}</span>
+    <span class="font-semibold text-sm mx-1 grid place-content-center">{{
+      lang
+    }}</span>
   </li>
 </template>
 
