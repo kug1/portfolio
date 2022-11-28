@@ -10,7 +10,7 @@
       <p class="text-center text-base font-medium px-2">
         Hello! Im a high-schooler who likes coding. I like making CLI tools,
         customizing Linux environment, designing websites and creating them from
-        scratch. I use following languages and frameworks while coding.
+        scratch. I use the following languages and frameworks while coding.
       </p>
       <div class="mt-12">
         <ul class="flex flex-wrap justify-center align-center">
