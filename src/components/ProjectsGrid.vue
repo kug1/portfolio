@@ -20,6 +20,7 @@
         </project-item>
       </template>
     </div>
+    <base-button text="More Projects" path="/portfolio/projects"></base-button>
   </div>
 </template>
 

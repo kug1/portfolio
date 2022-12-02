@@ -1,7 +1,7 @@
 <template>
   <div class="flex flex-col">
     <h1
-      class="text-center font-semibold text-2xl md:text-3xl lg:text-[2.10rem] my-6 underline decoration-blue-600 dark:decoration-github-blue decoration-2 md:decoration-3 underline-offset-4"
+      class="text-center font-semibold text-2xl md:text-3xl lg:text-[2.10rem] mt-6 mb-5 underline decoration-blue-600 dark:decoration-github-blue decoration-2 md:decoration-3 underline-offset-4"
     >
       About
     </h1>
