@@ -1,18 +1,19 @@
 <template>
-  <section>
-    <!-- <projects-grid></projects-grid>
-    <base-button>Go Back</base-button> -->
-    <h1 class="header-mid">All Projects</h1>
-    <div class="grid"></div>
+  <section class="grid place-content-center">
+    <h1 class="header-mid mt-24">All Projects</h1>
+    <div
+      class="min-w-fit flex flex-wrap mt-12 lg:mt-24 justify-center align-center"
+    >
+      <project-cards></project-cards>
+    </div>
   </section>
 </template>
-
 <script>
-import Projects from './Projects.vue';
+import ProjectCards from './ProjectCards.vue';
 
 export default {
   components: {
-    'projects-grid': Projects,
+    ProjectCards,
   },
 };
 </script>

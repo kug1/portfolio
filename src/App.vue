@@ -7,19 +7,26 @@
     <router-view name="about"></router-view>
     <Suspense>
       <router-view name="projects"> </router-view>
+      <template #fallback>
+        <Loading />
+      </template>
     </Suspense>
   </main>
   <footer v-motion-slide-top>
-    <router-view name="footer"></router-view>
+    <the-footer></the-footer>
   </footer>
 </template>
 
 <script>
+import TheFooter from './components/layouts/TheFooter.vue';
 import DarkMode from './components/ui/DarkMode.vue';
+import Loading from './components/ui/Loading.vue';
 
 export default {
   components: {
     DarkMode,
+    TheFooter,
+    Loading,
   },
 };
 </script>
