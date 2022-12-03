@@ -1,39 +1,25 @@
 <template>
   <dark-mode v-motion-slide-right></dark-mode>
   <header v-motion-slide-top>
-    <the-header></the-header>
+    <router-view name="header"></router-view>
   </header>
   <main v-motion-slide-top>
-    <About />
+    <router-view name="about"></router-view>
     <Suspense>
-      <projects-grid></projects-grid>
-      <template #fallback>
-        <Loading />
-      </template>
+      <router-view name="projects"> </router-view>
     </Suspense>
   </main>
   <footer v-motion-slide-top>
-    <the-footer></the-footer>
+    <router-view name="footer"></router-view>
   </footer>
 </template>
 
 <script>
-import TheHeader from './components/layouts/TheHeader.vue';
-import TheFooter from './components/layouts/TheFooter.vue';
-
 import DarkMode from './components/ui/DarkMode.vue';
-import ProjectsGrid from './components/ProjectsGrid.vue';
-import Loading from './components/ui/Loading.vue';
-import About from './components/About.vue';
 
 export default {
   components: {
     DarkMode,
-    TheHeader,
-    TheFooter,
-    ProjectsGrid,
-    Loading,
-    About,
   },
 };
 </script>

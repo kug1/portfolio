@@ -13,7 +13,9 @@
 import { Icon } from '@iconify/vue';
 
 export default {
-  props: ['lang'],
+  props: {
+    lang: String,
+  },
   components: {
     IconSvg: Icon,
   },

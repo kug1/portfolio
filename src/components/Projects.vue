@@ -1,12 +1,8 @@
 <template>
   <div class="flex flex-col mt-10">
-    <h1
-      class="text-center text-2xl md:text-3xl lg:text-[2.10rem] font-bold my-8 underline decoration-blue-600 dark:decoration-github-blue decoration-2 md:decoration-3 underline-offset-4"
-    >
-      Projects
-    </h1>
+    <h1 class="header-mid">Projects</h1>
     <div
-      class="max-w-fit flex my-4 self-center flex-wrap align-center justify-center"
+      class="max-w-fit flex mt-8 mb-4 self-center flex-wrap align-center justify-center"
     >
       <template v-for="project in projects" :key="project.id">
         <project-item
@@ -20,12 +16,14 @@
         </project-item>
       </template>
     </div>
-    <base-button text="More Projects" path="/portfolio/projects"></base-button>
+    <router-link to="/portfolio/projects"
+      ><base-button text="More Projects"></base-button
+    ></router-link>
   </div>
 </template>
 
 <script>
-import ProjectItem from '../components/ProjectItem.vue';
+import ProjectItem from './ProjectItem.vue';
 
 export default {
   components: {
@@ -36,7 +34,6 @@ export default {
       `https://api.github.com/users/kug1/repos?type=owner`
     );
     const projects = await res.json();
-    // this.projects = data;
     return {
       projects,
     };

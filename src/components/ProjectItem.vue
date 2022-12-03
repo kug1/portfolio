@@ -37,7 +37,13 @@ export default {
   data() {
     return {};
   },
-  props: ['name', 'url', 'desc', 'stars', 'language'],
+  props: {
+    name: String,
+    url: String,
+    desc: String,
+    stars: Number,
+    language: String,
+  },
   components: {
     IconSvg: Icon,
   },
