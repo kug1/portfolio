@@ -6,7 +6,7 @@
   <main v-motion-slide-top>
     <router-view name="about"></router-view>
     <Suspense>
-      <router-view name="projects"> </router-view>
+      <router-view name="projects"></router-view>
       <template #fallback>
         <Loading />
       </template>
