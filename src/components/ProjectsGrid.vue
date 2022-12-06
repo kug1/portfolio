@@ -2,7 +2,7 @@
   <div class="flex flex-col mt-10">
     <h1 class="header-mid">Projects</h1>
     <div
-      class="max-w-fit mt-12 mb-4 flex flex-wrap self-center align-center justify-center"
+      class="max-w-fit mt-12 mb-4 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 auto-cols-min self-center place-content-center"
     >
       <project-cards></project-cards>
     </div>

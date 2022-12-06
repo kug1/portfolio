@@ -1,6 +1,6 @@
 <template>
   <div
-    class="rounded border-2 border-black dark:border-white flex flex-col p-5 overflow-hidden w-[21.50rem] md:w-[22.50rem] m-3"
+    class="rounded border-2 border-black dark:border-white flex flex-col p-5 overflow-hidden w-[20rem] md:w-[21.50rem] m-3"
   >
     <div class="flex flex-row flex-wrap justify-between content-center h-6">
       <a
