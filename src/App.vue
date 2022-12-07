@@ -4,13 +4,12 @@
     <router-view name="header"></router-view>
   </header>
   <main v-motion-slide-top>
-    <router-view name="about"></router-view>
-    <Suspense>
-      <router-view name="projects"></router-view>
-      <template #fallback>
-        <Loading />
-      </template>
-    </Suspense>
+    <router-view name="about" v-slot="{ Component }">
+      <transition name="fade">
+        <component :is="Component" />
+      </transition>
+    </router-view>
+    <router-view name="projects"></router-view>
   </main>
   <footer v-motion-slide-top>
     <the-footer></the-footer>
@@ -20,13 +19,11 @@
 <script>
 import TheFooter from './components/layouts/TheFooter.vue';
 import DarkMode from './components/ui/DarkMode.vue';
-import Loading from './components/ui/Loading.vue';
 
 export default {
   components: {
     DarkMode,
     TheFooter,
-    Loading,
   },
 };
 </script>

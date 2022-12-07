@@ -4,7 +4,12 @@
     <div
       class="max-w-fit mt-12 mb-4 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 auto-cols-min self-center place-content-center"
     >
-      <project-cards></project-cards>
+      <Suspense>
+        <project-cards></project-cards>
+        <template #fallback>
+          <Loading />
+        </template>
+      </Suspense>
     </div>
     <div class="grid place-content-center mt-4">
       <router-link to="/portfolio/projects"
@@ -16,10 +21,12 @@
 
 <script>
 import ProjectCards from '../components/ProjectCards.vue';
+import Loading from '../components/ui/Loading.vue';
 
 export default {
   components: {
     ProjectCards,
+    Loading,
   },
 };
 </script>

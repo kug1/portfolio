@@ -4,7 +4,12 @@
     <div
       class="max-w-fit flex flex-wrap mt-12 lg:mt-24 justify-center align-center self-center"
     >
-      <project-cards></project-cards>
+      <Suspense>
+        <project-cards></project-cards>
+        <template #fallback>
+          <Loading />
+        </template>
+      </Suspense>
     </div>
   </section>
   <div class="grid place-content-center mt-8">
@@ -16,10 +21,12 @@
 
 <script>
 import ProjectCards from './ProjectCards.vue';
+import Loading from '../components/ui/Loading.vue';
 
 export default {
   components: {
     ProjectCards,
+    Loading,
   },
 };
 </script>
