@@ -1,29 +1,23 @@
 <template>
   <dark-mode v-motion-slide-right></dark-mode>
   <header v-motion-slide-top>
-    <router-view name="header"></router-view>
+    <router-view name="header"> </router-view>
   </header>
   <main v-motion-slide-top>
-    <router-view name="about" v-slot="{ Component }">
-      <transition name="fade">
-        <component :is="Component" />
-      </transition>
-    </router-view>
+    <router-view name="about"> </router-view>
     <router-view name="projects"></router-view>
   </main>
   <footer v-motion-slide-top>
-    <the-footer></the-footer>
+    <router-view name="footer"> </router-view>
   </footer>
 </template>
 
 <script>
-import TheFooter from './components/layouts/TheFooter.vue';
 import DarkMode from './components/ui/DarkMode.vue';
 
 export default {
   components: {
     DarkMode,
-    TheFooter,
   },
 };
 </script>
@@ -41,5 +35,15 @@ body {
 
 footer {
   height: 100%;
+}
+
+.slide-enter-from,
+.slide-leave-active {
+  opacity: 0;
+}
+
+.slide-enter-from,
+.slide-leave-to {
+  transition: opacity 0.5s ease-out;
 }
 </style>
