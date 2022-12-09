@@ -1,6 +1,6 @@
 <template>
-  <div class="self-center grid place-content-center py-24">
-    <span class="grid place-content-center">
+  <div class="py-16">
+    <span>
       <Icon icon="line-md:loading-loop" width="24" />
     </span>
   </div>
