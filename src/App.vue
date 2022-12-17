@@ -34,7 +34,13 @@ body {
 }
 
 footer {
-  height: 100%;
+  /* position: relative;
+  margin-top: -180px;
+  height: 128px;
+  clear: both; */
+  width: 100%;
+  position: fixed;
+  bottom: 0;
 }
 
 .slide-enter-from,

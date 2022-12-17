@@ -4,6 +4,6 @@
 
 @layer components {
   .header-mid {
-    @apply text-center text-2xl md:text-3xl lg:text-[2.10rem] font-bold mt-6 underline decoration-blue-600 dark:decoration-github-blue decoration-2 md:decoration-3 underline-offset-4;
+    @apply text-center text-2xl md:text-3xl font-bold mt-6 underline decoration-blue-600 dark:decoration-github-blue decoration-2 md:decoration-3 underline-offset-4;
   }
 }

@@ -1,6 +1,6 @@
 <template>
   <div class="flex flex-col mt-10">
-    <h1 class="header-mid">Projects</h1>
+    <h1 class="header-mid">Recent Projects</h1>
     <div
       class="min-w-96 lg:max-w-[1080px] lg:flex-nowrap mt-12 mb-4 flex flex-wrap justify-center content-center self-center"
     >
