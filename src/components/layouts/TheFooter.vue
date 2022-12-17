@@ -1,5 +1,5 @@
 <template>
-  <div class="p-10 h-32 bottom-[-100px]">
+  <div class="p-10">
     <p class="text-center">
       Powered by
       <a

@@ -28,28 +28,8 @@ html.dark {
 }
 
 body {
-  height: 100%;
+  min-height: 100%;
   transition: all 0.4s cubic-bezier(0.075, 0.82, 0.165, 1);
   @apply bg-[#ffffff] text-[#0b0f10] dark:bg-[#0b0f10] dark:text-white;
-}
-
-footer {
-  /* position: relative;
-  margin-top: -180px;
-  height: 128px;
-  clear: both; */
-  width: 100%;
-  position: fixed;
-  bottom: 0;
-}
-
-.slide-enter-from,
-.slide-leave-active {
-  opacity: 0;
-}
-
-.slide-enter-from,
-.slide-leave-to {
-  transition: opacity 0.5s ease-out;
 }
 </style>
