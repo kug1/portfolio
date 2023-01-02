@@ -6,6 +6,7 @@ module.exports = {
     extend: {
       colors: {
         'github-blue': '#58a6ff',
+        'dark': "#0b0f10"
       },
       textDecorationThickness: {
         3: '3px',

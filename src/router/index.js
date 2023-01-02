@@ -15,15 +15,12 @@ const router = createRouter({
         header: TheHeader,
         about: About,
         projects: ProjectsGrid,
-        footer: TheFooter,
       },
-      meta: { transition: 'slide-left' },
     },
     {
       name: 'projects',
       path: '/portfolio/projects',
-      components: { projects: ProjectsPage, footer: TheFooter },
-      meta: { transition: 'slide-right' },
+      components: { projects: ProjectsPage },
     },
     // { path: '/:notFound(.*)', component: NotFound } // Just learned that github has a default 404 page. No need to make our own here.
   ],
