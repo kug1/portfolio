@@ -6,18 +6,18 @@ import AboutLanguages from "../components/AboutLanguages.tsx";
 import ProjectCard from "../components/ProjectCard.tsx";
 import Footer from "../components/Footer.tsx";
 
-export const handler: Handlers<Project[]> = {
+export const handler: Handlers<Project[] | null> = {
   async GET(_, ctx) {
-    const req = await fetch(
+    const resp = await fetch(
       "https://api.github.com/users/kug1/repos?type=owner",
     );
-    const data: Project[] = await req.json();
-    if (data) {
-      const projects = data.filter((e) => !e.fork);
-      return ctx.render(projects);
-    } else {
-      return ctx.render();
+    const data: Project[] = await resp.json();
+    if (resp.status === 404) {
+      return ctx.render(null);
     }
+
+    const projects = data.filter((e) => !e.fork);
+    return ctx.render(projects);
   },
 };
 
@@ -48,11 +48,11 @@ export default function Home(props: PageProps<Project[]>) {
             <AboutLanguages />
           </div>
         </div>
-        <div class="mt-16">
+        <div class="mt-20">
           <h1 class="text-center text-2xl md:text-3xl font-bold mt-6">
             Projects
           </h1>
-          <div class="w-[1104px] grid grid-cols-3 mt-10 mx-auto">
+          <div class="w-[1104px] grid grid-cols-3 mt-12 mx-auto">
             <ProjectCard {...props} />
           </div>
         </div>
