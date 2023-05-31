@@ -4,14 +4,14 @@ export default function Navbar() {
       <nav class="my-8 w-fit">
         <ul class="flex flex-row">
           <li class="text-center text-base md:text-xl font-bold mx-3">
-            <a class="relative cursor-pointer" href="http://localhost:8000">
+            <a class="relative cursor-pointer" href="https://kug1.deno.dev/">
               Home
             </a>
           </li>
           <li class="text-center text-base md:text-xl font-bold mx-3">
             <a
               class="relative cursor-pointer"
-              href="http://localhost:8000/projects"
+              href="https://kug1.deno.dev/projects"
             >
               Projects
             </a>
@@ -19,7 +19,7 @@ export default function Navbar() {
           <li class="text-center text-base md:text-xl font-bold mx-3">
             <a
               class="relative cursor-pointer"
-              href="http://localhost:8000/posts"
+              href="https://kug1.deno.dev/posts"
             >
               Posts
             </a>
