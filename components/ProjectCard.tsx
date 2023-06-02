@@ -30,7 +30,7 @@ export default function ProjectCard({ data }: PageProps<Project[] | null>) {
             </div>
           </div>
           <div class="h-full flex flex-col justify-between">
-            <p class="text-sm text-left my-auto">
+            <p class="text-sm text-left mt-2">
               {data?.description
                 ? trimmedString(data.description, 37)
                 : "No description found"}
