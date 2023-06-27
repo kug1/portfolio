@@ -16,14 +16,6 @@ export default function Navbar() {
               Projects
             </a>
           </li>
-          <li class="text-center text-base md:text-xl font-bold mx-3">
-            <a
-              class="relative cursor-pointer"
-              href="https://kug1.deno.dev/posts"
-            >
-              Posts
-            </a>
-          </li>
         </ul>
       </nav>
     </div>
