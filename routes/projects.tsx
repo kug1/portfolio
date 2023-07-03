@@ -20,9 +20,9 @@ export const handler: Handlers<Project[] | null> = {
 
 export default function Projects(props: PageProps<Project[] | null>) {
   return (
-    <div class="text-center flex flex-col w-full md:w-3/4 mx-auto mt-16">
-      <h1 class="text-3xl font-bold">All Projects</h1>
-      <div class="w-full md:w-[1104px] grid grid-cols-1 justify-center md:grid-cols-3 grid-rows-auto mt-8 md:mx-auto">
+    <div class="text-center flex flex-col w-full mt-16">
+      <h1 class="text-3xl font-bold w">All Projects</h1>
+      <div class="w-full md:w-[740px] lg:w-[1104px] grid md:grid-cols-2 lg:grid-cols-3 mt-12 justify-center mt-8 mx-auto">
         <ProjectCard {...props} />
       </div>
       <div class="w-fit mt-12">
