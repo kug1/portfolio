@@ -52,7 +52,7 @@ export default function Home(props: PageProps<Project[]>) {
           <h1 class="text-center text-2xl md:text-3xl font-bold mt-6">
             Projects
           </h1>
-          <div class="w-full lg:w-[1104px] grid grid-columns-1 md:grid-cols-3 mt-12 mx-auto">
+          <div class="w-full md:w-[740px] lg:w-[1104px] grid grid-columns-1 md:grid-cols-2 lg:grid-cols-3 mt-12 mx-auto justify-center">
             <ProjectCard {...props} />
           </div>
         </div>
