@@ -22,7 +22,7 @@ export default function Projects(props: PageProps<Project[] | null>) {
   return (
     <div class="text-center flex flex-col w-full md:w-3/4 mx-auto mt-16">
       <h1 class="text-3xl font-bold">All Projects</h1>
-      <div class="w-full md:w-[1104px] grid grid-cols-1 md:grid-cols-3 grid-rows-auto mt-8 md:mx-auto">
+      <div class="w-full md:w-[1104px] grid grid-cols-1 justify-center md:grid-cols-3 grid-rows-auto mt-8 md:mx-auto">
         <ProjectCard {...props} />
       </div>
       <div class="w-fit mt-12">
