@@ -5,7 +5,7 @@ export default function App({ Component }: AppProps) {
   return (
     <html class="h-full">
       <Head>
-        <title>kug1</title>
+        <title>kugi</title>
         <link rel="icon" type="image/png" href="/favicon.png" />
       </Head>
       <body class="min-h-full flex flex-col">

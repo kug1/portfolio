@@ -28,7 +28,7 @@ export default function Projects(props: PageProps<Project[] | null>) {
       <div class="w-fit mt-12">
         <a
           class="py-2 px-4 border-2 border-[#000000] rounded"
-          href="https://kug1.deno.dev/"
+          href="https://kugi.deno.dev/"
         >
           Go Back
         </a>
