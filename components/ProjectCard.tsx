@@ -10,10 +10,10 @@ export default function ProjectCard({ data }: PageProps<Project[] | null>) {
   return (
     <>
       {data?.map((data) => (
-        <div class="flex flex-col border-[#000000] border-2 rounded p-5 overflow-hidden w-[20rem] md:w-[21.50rem] h-28 m-3">
+        <div class="flex flex-col bg-secondary border-2 rounded p-5 overflow-hidden w-[20rem] md:w-[21.50rem] h-28 m-3">
           <div class="flex flex-row flex-wrap justify-between content-center h-6">
             <a
-              class="flex flex-row text-blue-600"
+              class="flex flex-row text-accent"
               href={data.html_url}
               target="_blank"
             >
@@ -30,7 +30,7 @@ export default function ProjectCard({ data }: PageProps<Project[] | null>) {
             </div>
           </div>
           <div class="h-full flex flex-col justify-between">
-            <p class="text-sm text-left mt-2">
+            <p class="text-sm text-left mt-2 text-text">
               {data?.description
                 ? trimmedString(data.description, 37)
                 : "No description found"}

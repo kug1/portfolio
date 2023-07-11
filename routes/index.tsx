@@ -27,8 +27,10 @@ export default function Home(props: PageProps<Project[]>) {
       <Navbar />
       <main>
         <div class="flex items-center pt-24 pb-24 text-center flex-col justify-center">
-          <h1 class="font-bold text-5xl md:text-7xl mb-1 md:mb-3">kugi</h1>
-          <p class="text-base md:text-xl md:mb-3 font-medium my-2">
+          <h1 class="font-bold text-5xl md:text-7xl mb-1 md:mb-3 text-header">
+            kugi
+          </h1>
+          <p class="text-base md:text-xl md:mb-3 font-medium my-2 text-header">
             Software Engineer & Web Developer
           </p>
         </div>
@@ -39,7 +41,7 @@ export default function Home(props: PageProps<Project[]>) {
           </h1>
 
           <div class="max-w-2xl self-center flex flex-col mt-10">
-            <p class="text-center text-base font-medium px-3">
+            <p class="text-center text-base font-medium px-3 text-text">
               Hello! Im a high-schooler who likes coding. I like making CLI
               tools, customizing Linux environment, designing websites and
               creating them from scratch. I use the following languages and
