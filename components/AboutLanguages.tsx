@@ -2,6 +2,7 @@ import Vue from "$tabler-icons/brand-vue.tsx";
 import TypeScript from "$tabler-icons/brand-typescript.tsx";
 import TailwindCSS from "$tabler-icons/brand-tailwind.tsx";
 import IconBrandNuxt from "$tabler-icons/brand-nuxt.tsx";
+import IconBrandDeno from "$tabler-icons/brand-deno.tsx";
 
 export default function AboutLanguages() {
   return (
@@ -29,6 +30,12 @@ export default function AboutLanguages() {
           <IconBrandNuxt />
           <span class="font-semibold text-sm mx-1 grid place-content-center">
             Nuxt
+          </span>
+        </li>
+        <li class="p-5 m-3 border-2 bg-secondary rounded flex flex-row justify-start w-[10rem] md:w-[12rem]">
+          <IconBrandDeno />
+          <span class="font-semibold text-sm mx-1 grid place-content-center">
+            Deno
           </span>
         </li>
       </ul>
