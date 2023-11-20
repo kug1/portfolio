@@ -10,12 +10,11 @@ export const handler: Handlers<Project[] | null> = {
   async GET(_, ctx) {
     const resp = await fetch(
       "https://api.github.com/users/kug1/repos?type=owner",
-    );
-    const data: Project[] = await resp.json();
+    ).catch(() => ctx.renderNotFound());
     if (resp.status === 404) {
-      return ctx.render(null);
+      return ctx.renderNotFound();
     }
-
+    const data: Project[] = await resp.json().catch(() => ctx.renderNotFound());
     const projects = data.filter((e) => !e.fork);
     return ctx.render(projects);
   },
@@ -27,10 +26,10 @@ export default function Home(props: PageProps<Project[]>) {
       <Navbar />
       <main>
         <div class="flex items-center pt-24 pb-24 text-center flex-col justify-center">
-          <h1 class="font-bold text-5xl md:text-7xl mb-1 md:mb-3 text-header">
+          <h1 class="font-bold text-6xl md:text-7xl mb-1 md:mb-3 text-header">
             kugi
           </h1>
-          <p class="text-base md:text-xl md:mb-3 font-medium my-2 text-header">
+          <p class="text-base md:text-xl md:mb-3 font-medium mt-2 text-header">
             Software Engineer & Web Developer
           </p>
         </div>
@@ -51,7 +50,7 @@ export default function Home(props: PageProps<Project[]>) {
           </div>
         </div>
         <div class="mt-20">
-          <h1 class="text-center text-2xl md:text-3xl font-bold mt-6">
+          <h1 class="text-center text-2xl md:text-3xl font-bold mt-6 ">
             Projects
           </h1>
           <div class="w-full md:w-[740px] lg:w-[1104px] grid md:grid-cols-2 lg:grid-cols-3 mt-12 mx-auto justify-center">
